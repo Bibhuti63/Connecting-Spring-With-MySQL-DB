@@ -5,6 +5,7 @@ package com.example.SqlRocks;
 
 //for each model create separate controller,service and repository layer.
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -18,8 +19,10 @@ public class User {
     private int id;
 
     private String name;
+    @Column(name = "Age") //to change the coloumn name in table// by default it's same as attribute name
     private int age;
 
+    @Column(name = "Phone number",unique = true) //make the mobile number as unique key
     private int mobileNo;
 
 
