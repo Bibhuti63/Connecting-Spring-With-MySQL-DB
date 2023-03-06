@@ -19,7 +19,7 @@ public class User {
     private int id;
 
     private String name;
-    @Column(name = "Age") //to change the coloumn name in table// by default it's same as attribute name
+    @Column(name = "Age") //to change the column name in table// by default it's same as attribute name
     private int age;
 
     @Column(name = "Phone number",unique = true) //make the mobile number as unique key
